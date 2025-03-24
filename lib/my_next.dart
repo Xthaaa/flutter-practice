@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:page_design/screens/main2.dart';
 
 class MyNext extends StatefulWidget {
   const MyNext({super.key});
@@ -41,7 +42,12 @@ class _MyNextState extends State<MyNext> {
             height: 72,
             width: 450,
             child: ElevatedButton(
-              onPressed: () {},
+             onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => SecondPage()),
+            );
+          },
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromARGB(255, 250, 107, 5),
                 shape: RoundedRectangleBorder(
