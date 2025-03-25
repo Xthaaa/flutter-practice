@@ -17,6 +17,7 @@ class SecondPage extends StatelessWidget {
       ),
       body: const MyList(),
       floatingActionButton: FloatingActionButton(
+        shape: CircleBorder(),
         onPressed: () {},
         backgroundColor: const Color.fromARGB(255, 241, 144, 8),
         child: const Icon(Icons.add),
