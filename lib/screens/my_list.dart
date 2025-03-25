@@ -6,13 +6,15 @@ class MyList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Container(
-      decoration: BoxDecoration(border: Border.all(color: const Color.fromARGB(255, 216, 213, 213) )),
-      child: ListView.builder(
-        itemCount: 3,
-        itemBuilder: (context, index) => Padding(
-          padding: EdgeInsets.all(5),
-          child: Container(
+      body: Container(
+        decoration: BoxDecoration(
+            border:
+                Border.all(color: const Color.fromARGB(255, 216, 213, 213))),
+        child: ListView.builder(
+          itemCount: 3,
+          itemBuilder: (context, index) => Padding(
+            padding: EdgeInsets.all(5),
+            child: Container(
               decoration: BoxDecoration(
                 border: Border.all(
                     color: const Color.fromARGB(255, 238, 230, 230), width: 2),
@@ -73,9 +75,11 @@ class MyList extends StatelessWidget {
                     ],
                   ),
                 ],
-              )),
+              ),
+            ),
+          ),
         ),
       ),
-    ));
+    );
   }
 }
