@@ -15,7 +15,7 @@ class SecondPage extends StatelessWidget {
         leading: PopupMenuButton(
             itemBuilder: (context) => [], child: const Icon(Icons.more_vert)),
       ),
-      body: const MyList(),
+      body: MyList(),
       floatingActionButton: FloatingActionButton(
         shape: CircleBorder(),
         onPressed: () {},
