@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class InteractButtons extends StatefulWidget {
-  const InteractButtons({super.key});
+  const InteractButtons({super.key, this.onLikePressed});
+
+   final VoidCallback ? onLikePressed;
   @override
   State<StatefulWidget> createState() {
     return _InteractButtons();
@@ -10,6 +12,7 @@ class InteractButtons extends StatefulWidget {
 
 class _InteractButtons extends State<InteractButtons> {
   bool isliked = false;
+ 
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -22,6 +25,7 @@ class _InteractButtons extends State<InteractButtons> {
                 setState(() {
                   isliked = !isliked;
                 });
+                widget.onLikePressed?.call();
               },
               icon: Icon(
                 Icons.favorite_outline_rounded,

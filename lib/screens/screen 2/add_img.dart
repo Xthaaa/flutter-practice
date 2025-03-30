@@ -9,7 +9,9 @@ class AddImg extends StatelessWidget {
         'assets/image/lady2.png',
         width: 450,
         height: 200,
+        
       ),
+      
     );
   }
 }

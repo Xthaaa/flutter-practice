@@ -69,18 +69,24 @@ class _NewContentState extends State<Newcontent> {
             return Stack(
               children: [
                 GestureDetector(
-                    onTap: () { 
+                    onTap: () {
                       print("video tapped");
-                      if (flickManager.flickVideoManager!.isPlaying ) {
-
+                      if (flickManager.flickVideoManager!.isPlaying) {
                         flickManager.flickControlManager!.pause();
                         print("video paused");
                       } else {
                         print("video play");
                         flickManager.flickControlManager!.play();
                       }
-                      setState(() {
-                      });
+                      setState(() {});
+                    },
+                    onDoubleTap: () {
+                      InteractButtons(
+                        onLikePressed: () {
+                          setState(() {}); 
+                          print("video liked!");
+                        },
+                      );
                     },
                     child: FlickVideoPlayer(
                       flickManager: flickManager,
@@ -111,7 +117,7 @@ class _NewContentState extends State<Newcontent> {
                     height: 400,
                     child: InteractButtons(),
                   ),
-                ),
+                ), 
                 Align(
                   alignment: Alignment.bottomLeft,
                   child: Padding(
@@ -119,6 +125,21 @@ class _NewContentState extends State<Newcontent> {
                     child: SizedBox(
                       width: 250,
                       child: AddImg(),
+                    ),
+                  ),
+                ),
+                Align(
+                  alignment: Alignment.bottomLeft,
+                  child: Padding(
+                    padding: EdgeInsets.only(bottom: 30),
+                    child: SizedBox(
+                      child: Text(
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt',
+                        style: TextStyle(
+                            color: const Color.fromARGB(255, 245, 241, 241),
+                            fontFamily: 'Gilroy-Regular',
+                            fontSize: 20),
+                      ),
                     ),
                   ),
                 ),
