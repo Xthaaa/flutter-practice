@@ -32,7 +32,7 @@ class _InteractButtons extends State<InteractButtons> {
                   : const Color.fromARGB(255, 232, 224, 224),
             ),
             Padding(
-              padding: EdgeInsets.only(bottom: 25),
+              padding: EdgeInsets.only(bottom: 20),
             ),
             IconButton(
               onPressed: () {},
@@ -41,7 +41,7 @@ class _InteractButtons extends State<InteractButtons> {
               color: const Color.fromARGB(255, 225, 222, 222),
             ),
             Padding(
-              padding: EdgeInsets.only(bottom: 25),
+              padding: EdgeInsets.only(bottom: 20),
             ),
             IconButton(
               onPressed: () {},
@@ -52,7 +52,7 @@ class _InteractButtons extends State<InteractButtons> {
               color: const Color.fromARGB(255, 238, 235, 235),
             ),
             Padding(
-              padding: EdgeInsets.only(bottom: 25),
+              padding: EdgeInsets.only(bottom: 20),
             ),
             IconButton(
               onPressed: () {},
@@ -63,7 +63,8 @@ class _InteractButtons extends State<InteractButtons> {
               color: const Color.fromARGB(255, 238, 235, 235),
             ),
             Padding(
-              padding: EdgeInsets.only(bottom: 25),
+              padding: EdgeInsets.only(bottom: 20
+              ),
             ),
             IconButton(
               onPressed: () {},

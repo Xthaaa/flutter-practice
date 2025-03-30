@@ -4,6 +4,7 @@ import 'package:page_design/new_page.dart';
 void main() {
   runApp(
     MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Container(
             decoration: const BoxDecoration(color: Color.fromARGB(255, 49, 2, 2),),
