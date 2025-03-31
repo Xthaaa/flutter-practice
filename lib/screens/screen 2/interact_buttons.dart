@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class InteractButtons extends StatefulWidget {
   const InteractButtons({super.key, this.onLikePressed});
 
-   final VoidCallback ? onLikePressed;
+  final VoidCallback? onLikePressed;
   @override
   State<StatefulWidget> createState() {
     return _InteractButtons();
@@ -12,7 +12,7 @@ class InteractButtons extends StatefulWidget {
 
 class _InteractButtons extends State<InteractButtons> {
   bool isliked = false;
- 
+
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -67,8 +67,7 @@ class _InteractButtons extends State<InteractButtons> {
               color: const Color.fromARGB(255, 238, 235, 235),
             ),
             Padding(
-              padding: EdgeInsets.only(bottom: 20
-              ),
+              padding: EdgeInsets.only(bottom: 20),
             ),
             IconButton(
               onPressed: () {},
@@ -81,6 +80,16 @@ class _InteractButtons extends State<InteractButtons> {
             Padding(
               padding: EdgeInsets.only(bottom: 25),
             ),
+            ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color.fromARGB(255, 220, 109, 11),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8))),
+              child: Text('Follow', style: TextStyle(color: Colors.white),),
+            ),
+              Padding(
+              padding: EdgeInsets.only(bottom: 20),),
           ],
         ),
       ],

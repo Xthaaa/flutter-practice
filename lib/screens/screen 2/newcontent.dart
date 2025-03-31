@@ -69,76 +69,80 @@ class _NewContentState extends State<Newcontent> {
             return Stack(
               children: [
                 GestureDetector(
-                    onTap: () {
-                      print("video tapped");
-                      if (flickManager.flickVideoManager!.isPlaying) {
-                        flickManager.flickControlManager!.pause();
-                        print("video paused");
-                      } else {
-                        print("video play");
-                        flickManager.flickControlManager!.play();
-                      }
-                      setState(() {});
-                    },
-                    onDoubleTap: () {
-                      InteractButtons(
-                        onLikePressed: () {
-                          setState(() {}); 
-                          print("video liked!");
-                        },
-                      );
-                    },
-                    child: FlickVideoPlayer(
-                      flickManager: flickManager,
-                      flickVideoWithControls:
-                          FlickVideoWithControls(controls: null),
-                    )),
+                  onTap: () {
+                    print("video tapped");
+                    if (flickManager.flickVideoManager!.isPlaying) {
+                      flickManager.flickControlManager!.pause();
+                      print("video paused");
+                    } else {
+                      print("video play");
+                      flickManager.flickControlManager!.play();
+                    }
+                    setState(() {});
+                  },
+                  child: FlickVideoPlayer(
+                    flickManager: flickManager,
+                    flickVideoWithControls:
+                        FlickVideoWithControls(controls: null),
+                  ),
+                ),
                 Align(
                   alignment: Alignment.topRight,
-                  child: IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.search),
-                    color: Colors.white,
-                    iconSize: 30,
+                  child: Padding(
+                    padding: EdgeInsets.only(top: 15),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.search),
+                      color: Colors.white,
+                      iconSize: 30,
+                    ),
                   ),
                 ),
                 Align(
                   alignment: Alignment.topLeft,
-                  child: IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.arrow_back),
-                    color: Colors.white,
-                    iconSize: 30,
+                  child: Padding(
+                    padding: EdgeInsets.only(top: 15),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.arrow_back),
+                      color: Colors.white,
+                      iconSize: 30,
+                    ),
                   ),
                 ),
                 Align(
                   alignment: Alignment.bottomRight,
                   child: SizedBox(
-                    height: 400,
+                    height: 450,
                     child: InteractButtons(),
                   ),
-                ), 
-                Align(
-                  alignment: Alignment.bottomLeft,
-                  child: Padding(
-                    padding: const EdgeInsets.only(top: 540),
-                    child: SizedBox(
-                      width: 250,
-                      child: AddImg(),
+                ),
+                Row(
+                  children: [
+                    Align(
+                      alignment: Alignment.bottomLeft,
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 540),
+                        child: SizedBox(
+                          width: 200,
+                          child: AddImg(),
+                        ),
+                      ),
                     ),
-                  ),
+                  ],
                 ),
                 Align(
                   alignment: Alignment.bottomLeft,
                   child: Padding(
-                    padding: EdgeInsets.only(bottom: 30),
+                    padding: EdgeInsets.only(bottom: 30, left: 25),
                     child: SizedBox(
+                      height: 30,
                       child: Text(
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt',
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, skjdks kcd kekjfj kjl nvbvx kmw iej lddkcm mnwwiroirt ',
                         style: TextStyle(
                             color: const Color.fromARGB(255, 245, 241, 241),
                             fontFamily: 'Gilroy-Regular',
-                            fontSize: 20),
+                            fontSize: 18),
                       ),
                     ),
                   ),
