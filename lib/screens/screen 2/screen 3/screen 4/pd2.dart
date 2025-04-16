@@ -15,38 +15,42 @@ class NewPage2 extends StatelessWidget {
                 SizedBox(
                   width: 210,
                   height: 130,
-                  child: Card(
-                    child: Center(
-                      child: Column(
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.only(top: 12.75),
-                            child: Image.asset(
-                              "assets/image/Vector.png",
-                              height: 30,
-                              width: 24,
+                  child: TextButton(
+                    onPressed: () {},
+                    child: Card(
+                      color: Color(0xFFF9F9F9),
+                      child: Center(
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.only(top: 12.75),
+                              child: Image.asset(
+                                "assets/image/Vector.png",
+                                height: 30,
+                                width: 24,
+                              ),
                             ),
-                          ),
-                          Text(
-                            'PDFs Bookmark',
-                            style: TextStyle(
-                              fontFamily: 'Roboto-Medium',
-                              fontSize: 17,
-                              color: Color(0xFF956731),
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(top: 3),
-                            child: Text(
-                              'Extract text from\nscanned PDFs',
+                            Text(
+                              'PDFs Bookmark',
                               style: TextStyle(
-                                  fontFamily: 'Roboto-Light',
-                                  fontSize: 12,
-                                  height: 1.1,
-                                  color: Color(0xFF808080)),
+                                fontFamily: 'Roboto-Medium',
+                                fontSize: 17,
+                                color: Color(0xFF956731),
+                              ),
                             ),
-                          ),
-                        ],
+                            Padding(
+                              padding: EdgeInsets.only(top: 3),
+                              child: Text(
+                                'Extract text from\nscanned PDFs',
+                                style: TextStyle(
+                                    fontFamily: 'Roboto-Light',
+                                    fontSize: 12,
+                                    height: 1.1,
+                                    color: Color(0xFF808080)),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),
@@ -57,38 +61,42 @@ class NewPage2 extends StatelessWidget {
                 SizedBox(
                   width: 210,
                   height: 130,
-                  child: Card(
-                    child: Center(
-                      child: Column(
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.only(top: 12.75),
-                            child: Image.asset(
-                              "assets/image/Vector.png",
-                              height: 30,
-                              width: 24,
+                  child: TextButton(
+                    onPressed: () {},
+                    child: Card(
+                      color: Color(0xFFF9F9F9),
+                      child: Center(
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.only(top: 12.75),
+                              child: Image.asset(
+                                "assets/image/Vector.png",
+                                height: 30,
+                                width: 24,
+                              ),
                             ),
-                          ),
-                          Text(
-                            'OCR PDFs',
-                            style: TextStyle(
-                              fontFamily: 'Roboto-Medium',
-                              fontSize: 17,
-                              color: Color(0xFF956731),
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(top: 3),
-                            child: Text(
-                              'Extract text from\nscanned PDFs',
+                            Text(
+                              'OCR PDFs',
                               style: TextStyle(
-                                  fontFamily: 'Roboto-Light',
-                                  fontSize: 12,
-                                  height: 1.1,
-                                  color: Color(0xFF808080)),
+                                fontFamily: 'Roboto-Medium',
+                                fontSize: 17,
+                                color: Color(0xFF956731),
+                              ),
                             ),
-                          ),
-                        ],
+                            Padding(
+                              padding: EdgeInsets.only(top: 3),
+                              child: Text(
+                                'Extract text from\nscanned PDFs',
+                                style: TextStyle(
+                                    fontFamily: 'Roboto-Light',
+                                    fontSize: 12,
+                                    height: 1.1,
+                                    color: Color(0xFF808080)),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),
@@ -101,38 +109,42 @@ class NewPage2 extends StatelessWidget {
                 SizedBox(
                   width: 210,
                   height: 130,
-                  child: Card(
-                    child: Center(
-                      child: Column(
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.only(top: 12.75),
-                            child: Image.asset(
-                              "assets/image/Vector.png",
-                              height: 30,
-                              width: 24,
+                  child: TextButton(
+                    onPressed: () {},
+                    child: Card(
+                      color: Color(0xFFF9F9F9),
+                      child: Center(
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.only(top: 12.75),
+                              child: Image.asset(
+                                "assets/image/Vector.png",
+                                height: 30,
+                                width: 24,
+                              ),
                             ),
-                          ),
-                          Text(
-                            'Compressed PDFs',
-                            style: TextStyle(
-                              fontFamily: 'Roboto-Medium',
-                              fontSize: 17,
-                              color: Color(0xFF956731),
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(top: 3),
-                            child: Text(
-                              'Extract text from\nscanned PDFs',
+                            Text(
+                              'Compressed PDFs',
                               style: TextStyle(
-                                  fontFamily: 'Roboto-Light',
-                                  fontSize: 12,
-                                  height: 1.1,
-                                  color: Color(0xFF808080)),
+                                fontFamily: 'Roboto-Medium',
+                                fontSize: 17,
+                                color: Color(0xFF956731),
+                              ),
                             ),
-                          ),
-                        ],
+                            Padding(
+                              padding: EdgeInsets.only(top: 3),
+                              child: Text(
+                                'Extract text from\nscanned PDFs',
+                                style: TextStyle(
+                                    fontFamily: 'Roboto-Light',
+                                    fontSize: 12,
+                                    height: 1.1,
+                                    color: Color(0xFF808080)),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),
@@ -143,38 +155,42 @@ class NewPage2 extends StatelessWidget {
                 SizedBox(
                   width: 210,
                   height: 130,
-                  child: Card(
-                    child: Center(
-                      child: Column(
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.only(top: 12.75),
-                            child: Image.asset(
-                              "assets/image/Vector.png",
-                              height: 30,
-                              width: 24,
+                  child: TextButton(
+                    onPressed: () {},
+                    child: Card(
+                      color: Color(0xFFF9F9F9),
+                      child: Center(
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.only(top: 12.75),
+                              child: Image.asset(
+                                "assets/image/Vector.png",
+                                height: 30,
+                                width: 24,
+                              ),
                             ),
-                          ),
-                          Text(
-                            'Merge PDFs',
-                            style: TextStyle(
-                              fontFamily: 'Roboto-Medium',
-                              fontSize: 17,
-                              color: Color(0xFF956731),
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(top: 3),
-                            child: Text(
-                              'Extract text from\nscanned PDFs',
+                            Text(
+                              'Merge PDFs',
                               style: TextStyle(
-                                  fontFamily: 'Roboto-Light',
-                                  fontSize: 12,
-                                  height: 1.1,
-                                  color: Color(0xFF808080)),
+                                fontFamily: 'Roboto-Medium',
+                                fontSize: 17,
+                                color: Color(0xFF956731),
+                              ),
                             ),
-                          ),
-                        ],
+                            Padding(
+                              padding: EdgeInsets.only(top: 3),
+                              child: Text(
+                                'Extract text from\nscanned PDFs',
+                                style: TextStyle(
+                                    fontFamily: 'Roboto-Light',
+                                    fontSize: 12,
+                                    height: 1.1,
+                                    color: Color(0xFF808080)),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),
