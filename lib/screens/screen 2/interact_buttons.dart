@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class InteractButtons extends StatefulWidget {
   const InteractButtons({super.key, this.onLikePressed});
 
@@ -48,7 +49,14 @@ class _InteractButtons extends State<InteractButtons> {
               padding: EdgeInsets.only(bottom: 20),
             ),
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                // Navigator.push(
+                //   context,
+                //   MaterialPageRoute(
+                //     builder: (context) => AddPage(),
+                //   ),
+                // );
+              },
               icon: Icon(
                 Icons.send_outlined,
               ),
@@ -86,10 +94,14 @@ class _InteractButtons extends State<InteractButtons> {
                   backgroundColor: const Color.fromARGB(255, 220, 109, 11),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8))),
-              child: Text('Follow', style: TextStyle(color: Colors.white),),
+              child: Text(
+                'Follow',
+                style: TextStyle(color: Colors.white),
+              ),
             ),
-              Padding(
-              padding: EdgeInsets.only(bottom: 20),),
+            Padding(
+              padding: EdgeInsets.only(bottom: 20),
+            ),
           ],
         ),
       ],

@@ -2,6 +2,7 @@ import 'package:flick_video_player/flick_video_player.dart';
 import 'package:flutter/material.dart';
 import 'package:page_design/screens/screen%202/add_img.dart';
 import 'package:page_design/screens/screen%202/interact_buttons.dart';
+import 'package:page_design/screens/screen%202/screen%203/page_design2.dart';
 import 'package:video_player/video_player.dart';
 
 class Newcontent extends StatefulWidget {
@@ -91,7 +92,14 @@ class _NewContentState extends State<Newcontent> {
                   child: Padding(
                     padding: EdgeInsets.only(top: 15),
                     child: IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => PageDesign2(),
+                          ),
+                        );
+                      },
                       icon: Icon(Icons.search),
                       color: Colors.white,
                       iconSize: 30,
@@ -140,9 +148,10 @@ class _NewContentState extends State<Newcontent> {
                       child: Text(
                         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, skjdks kcd kekjfj kjl nvbvx kmw iej lddkcm mnwwiroirt ',
                         style: TextStyle(
-                            color: const Color.fromARGB(255, 245, 241, 241),
-                            fontFamily: 'Gilroy-Regular',
-                            fontSize: 18),
+                          color: const Color.fromARGB(255, 245, 241, 241),
+                          fontFamily: 'Gilroy-Regular',
+                          fontSize: 18,
+                        ),
                       ),
                     ),
                   ),

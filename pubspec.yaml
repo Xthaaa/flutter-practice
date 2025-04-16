@@ -67,6 +67,13 @@ flutter:
     - assets/image/logo1.png
     - assets/image/lady.png
     - assets/image/lady2.png
+    - assets/image/court1.png
+    - assets/image/court2.png
+    - assets/image/court3.png
+    - assets/image/file1.png
+    - assets/image/file2.png
+    - assets/image/Vector.png
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 
@@ -86,6 +93,18 @@ flutter:
     - family: Gilroy-SemiBold
       fonts:
          - asset: assets/fonts/gilroy/Gilroy-SemiBold.ttf
+           weight: 400
+    - family: Gilroy-Medium
+      fonts:
+         - asset: assets/fonts/gilroy/Gilroy-Medium.ttf
+           weight: 400     
+    - family: Roboto-Medium
+      fonts:
+         - asset: assets/fonts/Roboto/static/Roboto-Medium.ttf
+           weight: 600
+    - family: Roboto-Light
+      fonts:
+         - asset: assets/fonts/Roboto/static/Roboto-Light.ttf
            weight: 400
   #
   # For details regarding fonts from package dependencies,
