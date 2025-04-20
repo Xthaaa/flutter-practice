@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:page_design/screens/screen%202/screen%203/page2.dart';
-import 'package:page_design/screens/screen%202/screen%203/screen%204/page_design3.dart';
+import 'package:page_design/screens/screen%203/page2.dart';
+import 'package:page_design/screens/screen%204/page_design3.dart';
 
 class PageDesign2 extends StatelessWidget {
   const PageDesign2({super.key});
