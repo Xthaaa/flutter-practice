@@ -74,6 +74,12 @@ flutter:
     - assets/image/file1.png
     - assets/image/file2.png
     - assets/image/Vector.png
+    - assets/image/image1.png
+    - assets/image/image2.png
+    - assets/image/image3.png
+    - assets/image/image4.png
+    - assets/image/image5.png
+  
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
@@ -106,6 +112,10 @@ flutter:
     - family: Roboto-Light
       fonts:
          - asset: assets/fonts/Roboto/static/Roboto-Light.ttf
+           weight: 400
+    - family: Roboto-Regular
+      fonts:
+         - asset: assets/fonts/Roboto/static/Roboto-Regular.ttf
            weight: 400
   #
   # For details regarding fonts from package dependencies,
