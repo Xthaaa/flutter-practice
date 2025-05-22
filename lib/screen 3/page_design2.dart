@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:page_design/screens/screen%203/page2.dart';
-import 'package:page_design/screens/screen%204/page_design3.dart';
+import 'package:page_design/screen%203/page2.dart';
+import 'package:page_design/screen%205/page_design3.dart';
 
 class PageDesign2 extends StatelessWidget {
   const PageDesign2({super.key});
@@ -21,12 +21,7 @@ class PageDesign2 extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => PageDesign3(),
-                ),
-              );
+             
             },
             icon: Icon(Icons.more_vert),
           ),

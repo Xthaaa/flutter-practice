@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:page_design/screens/main2.dart';
+import 'package:page_design/screen%201/main2.dart';
 
 class MyNext extends StatefulWidget {
   const MyNext({super.key});

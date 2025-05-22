@@ -1,15 +1,95 @@
 import 'package:flutter/material.dart';
+import 'package:page_design/screen%204/lets_doit.dart';
+import 'package:page_design/screen%205/page_design3.dart';
+import 'package:page_design/screen%206/table.dart';
 
 class BoxDec extends StatelessWidget {
   BoxDec({super.key});
   final List<Map<String, dynamic>> xyz = [
-    {'text': 'Analytics', 'image': 'assets/image/image2.png'},
-    {'text': 'PDF Tools', 'image': 'assets/image/image4.png'},
-    {'text': 'Indian Post Webview', 'image': 'assets/image/image1.png'},
-    {'text': 'E-filling Webview', 'image': 'assets/image/image1.png'},
-    {'text': 'Team Management', 'image': 'assets/image/image5.png'},
-    {'text': 'Task Management', 'image': 'assets/image/image3.png'},
-    {'text': 'My Client', 'image': 'assets/image/image5.png'},
+    {
+      'text': 'Analytics',
+      'image': 'assets/image/image2.png',
+      'onTap': (BuildContext context) {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => LetsDoit(),
+          ),
+        );
+      }
+    },
+    {
+      'text': 'PDF Tools',
+      'image': 'assets/image/image4.png',
+      'onTap': (BuildContext context) {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => PageDesign3(),
+          ),
+        );
+      }
+    },
+    {
+      'text': 'Indian Post Webview',
+      'image': 'assets/image/image1.png',
+      'onTap': (BuildContext context) {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => LetsDoit(),
+          ),
+        );
+      }
+    },
+    {
+      'text': 'E-filling Webview',
+      'image': 'assets/image/image1.png',
+      'onTap': (BuildContext context) {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => LetsDoit(),
+          ),
+        );
+      }
+    },
+    {
+      'text': 'Team Management',
+      'image': 'assets/image/image5.png',
+      'onTap': (BuildContext context) {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => LetsDoit(),
+          ),
+        );
+      }
+    },
+    {
+      'text': 'Task Management',
+      'image': 'assets/image/image3.png',
+      'onTap': (BuildContext context) {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => LetsDoit(),
+          ),
+        );
+      }
+    },
+    {
+      'text': 'My Client',
+      'image': 'assets/image/image5.png',
+      'onTap': (BuildContext context) {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => Table1(),
+          ),
+        );
+      }
+    },
   ];
   @override
   Widget build(BuildContext context) {
@@ -29,12 +109,13 @@ class BoxDec extends StatelessWidget {
                     return Padding(
                       padding: EdgeInsets.symmetric(vertical: 8),
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                           yastha['onTap'](context);
+                        },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.transparent,
                           shadowColor: Colors.transparent,
                           padding: EdgeInsets.zero,
-                          //alignment: Alignment.centerLeft,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(5),
                           ),
@@ -75,10 +156,14 @@ class BoxDec extends StatelessWidget {
                                         color: Color(0xFF232323),
                                       ),
                                     ),
-                                  ), Spacer(),
+                                  ),
+                                  Spacer(),
                                   IconButton(
-                                      onPressed: () {},
-                                      icon: Icon(Icons.chevron_right, color: Color(0xFF232323),),
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      Icons.chevron_right,
+                                      color: Color(0xFF232323),
+                                    ),
                                   ),
                                 ],
                               ),

@@ -1,8 +1,8 @@
 import 'package:flick_video_player/flick_video_player.dart';
 import 'package:flutter/material.dart';
-import 'package:page_design/screens/screen%202/add_img.dart';
-import 'package:page_design/screens/screen%202/interact_buttons.dart';
-import 'package:page_design/screens/screen%203/page_design2.dart';
+import 'package:page_design/screen%202/add_img.dart';
+import 'package:page_design/screen%202/interact_buttons.dart';
+import 'package:page_design/screen%203/page_design2.dart';
 import 'package:video_player/video_player.dart';
 
 class Newcontent extends StatefulWidget {

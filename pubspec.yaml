@@ -79,6 +79,8 @@ flutter:
     - assets/image/image3.png
     - assets/image/image4.png
     - assets/image/image5.png
+    - assets/image/hammer.png
+    - assets/image/person.png
   
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -117,6 +119,10 @@ flutter:
       fonts:
          - asset: assets/fonts/Roboto/static/Roboto-Regular.ttf
            weight: 400
+    - family: Roboto-ExtraBold
+      fonts:
+         - asset: assets/fonts/Roboto/static/Roboto-ExtraBold.ttf
+           weight: 700
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
